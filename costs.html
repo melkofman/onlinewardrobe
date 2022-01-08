@@ -9,6 +9,25 @@
     <meta charset="utf-8">
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+    <script src="https://code.highcharts.com/themes/high-contrast-light.js"></script>
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -213,7 +232,117 @@
         </div>
     </header>
 
-    <section style="height:570px"></section>
+    <section class="costs">
+        <section class="breadcrumbs-custom-inset">
+            <div class="breadcrumbs-custom context-dark bg-overlay-24">
+                <div class="container">
+                    <h3>Тарифные планы</h3><br>
+                </div>
+                <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+            </div>
+
+        </section>
+        <section class="pricing-table">
+            <h5 class="pricing-h5">Удобные цены для каждого</h5>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pricing-card p-3 text-center py-5 mt-2">
+                            <div class="images"><img src="images/pricing-icon.png" width="50"></div>
+                            <h6 class="mt-3">Стандартный</h6><span class="d-block font-weight-bold mt-3">&#8381;499</span><span class="d-block">в месяц</span><a href="buy-sub.html"> <button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Выбрать</button></a>
+                            <div class="mt-3"><span class="d-block"><i class="fa fa-check"></i>&nbsp;50 вещей для сохранения</span><span class="d-block"><i class="fa fa-check"></i>&nbsp;20 образов для сохранения</span><span class="text-left"><i></i>&#10008;&nbsp;Делиться образом с друзьями </span><span class="text-left"><i></i>&#10008;&nbsp;Общение в чате со стилистом</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card p-3 text-center py-5 mt-2">
+                            <div class="images"><img src="images/pricing-icon.png" width="50"><img src="images/pricing-icon.png" width="50"></div>
+                            <h6 class="mt-3">Расширенный</h6><span class="d-block font-weight-bold mt-3">&#8381;1999</span><span class="d-block">в месяц</span><a href="buy-sub.html"><button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Выбрать</button></a>
+                            <div class="mt-3"><span class="d-block"><i class="fa fa-check"></i>&nbsp;100 вещей для сохранения</span><span class="d-block"><i class="fa fa-check"></i>&nbsp;50 образов для сохранения</span><span class="d-block"><i class="fa fa-check"></i>&nbsp;Делиться образом с друзьями</span><span class="text-left"><i></i>&#10008;&nbsp;Общение в чате со стилистом</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card p-3 text-center py-5 mt-2">
+                            <p class="ribbon ribbon-top-right"><span>скидка! скидка!</span></p>
+                            <div class="images"><img src="images/pricing-icon.png" width="50"><img src="images/pricing-icon.png" width="50"><img src="images/pricing-icon.png" width="50"></div>
+                            <h6 class="mt-3">Про</h6><span class="d-block font-weight-bold mt-3">&#8381;4999</span><span class="d-block">в месяц</span><a href="buy-sub.html"><button class="btn btn-primary shadow mt-4 px-5 rounded-pill" type="button">Выбрать</button></a>
+                            <div class="mt-3"><span class="d-block"><i class="fa fa-check"></i>&nbsp;<b>&#8734;</b> вещей для сохранения</span><span class="d-block"><i class="fa fa-check"></i>&nbsp;<b>&#8734;</b> образов для сохранения</span><span class="d-block"><i class="fa fa-check"></i>&nbsp;Делиться образом с друзьями</span><span class="text-left"><i class="fa fa-check"></i>&nbsp;Общение в чате со стилистом</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="stats" style="margin-bottom: 20px;">
+        <div class="breadcrumbs-custom context-dark bg-overlay-24">
+            <div class="container">
+                <h3>Наша статистика</h3><br>
+            </div>
+            <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+        </div>
+        <h5 class="pricing-h5">Посмотрите на графики и отбросьте сомнения </h5>
+
+<!--        <div id="chart-wrap1" style="margin-bottom: 20px;">-->
+<!--        <figure class="highcharts-figure" style="margin-bottom: 20px;">-->
+<!--            <div id="pop-container"></div>-->
+<!--        </figure>-->
+<!--        </div>-->
+
+        <figure class="highcharts-figure" style="margin-bottom: 20px;">
+            <div id="container-3d"></div>
+
+            <div id="sliders" style="font-family: inherit;">
+                <table>
+                    <tr>
+                        <td><label for="alpha">Угол наклона вертикали</label></td>
+                        <td><input id="alpha" type="range" min="0" max="45" value="15"/> <span id="alpha-value" class="value"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="beta">Угол наклона горизонтали</label></td>
+                        <td><input id="beta" type="range" min="-45" max="45" value="15"/> <span id="beta-value" class="value"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="depth">Глубина</label></td>
+                        <td><input id="depth" type="range" min="20" max="100" value="50"/> <span id="depth-value" class="value"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </figure>
+
+
+        <div id="chart-wrap" style="margin-bottom: 20px; margin-top: 30px;">
+            <figure class="pie-highcharts-figure" style="margin-bottom: 20px;">
+                <div id="pie-container"></div>
+            </figure>
+            <label id="patterns-enabled-label">
+                <input type="checkbox" id="patterns-enabled" checked="">
+                Подсветка
+            </label>
+        </div>
+
+
+    </section>
+
+    <section class="section section-fluid bg-default text-center">
+        <div class="parallax-container" data-parallax-img="images/slider-4-slide-3-1920x678.png"><div class="material-parallax parallax"><img src="images/slider-4-slide-3-1920x678.png" alt="" style="display: block; transform: translate3d(-50%, 105px, 0px);"></div>
+            <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
+                <div class="container">
+                    <h3 class="oh font-weight-normal"><span class="d-inline-block wow slideInDown" style="visibility: visible; animation-name: slideInDown;">Остались вопросы?</span></h3>
+                    <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">Отправьте заявку, и наши менеджеры свяжутся с вами для обсуждения тарифных планов.</p>
+                    <!-- RD Mailform-->
+                    <form class="rd-form rd-mailform rd-form-inline oh-desktop" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                        <div class="form-wrap wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                            <input class="form-input form-control-has-validation" id="subscribe-form-1-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="subscribe-form-1-email">Введите E-mail</label>
+                        </div>
+                        <div class="form-button wow slideInRight" style="visibility: visible; animation-name: slideInRight;">
+                            <button class="button button-gray-7" type="submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Page Footer-->
     <footer class="section footer-corporate context-dark">
@@ -300,7 +429,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 order-sm-first">
                         <!-- Rights-->
-                        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Рудакова Ольга</span>
+                        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Рудакова Ольга, Кофман Мелани</span>
                         </p>
                     </div>
                     <div class="col-sm-6 col-md-4 text-md-right">
