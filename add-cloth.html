@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <script src="js/script.js"></script>
+    <script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
 
@@ -245,13 +247,14 @@
                 <div class="service-icon">
                   <i class="fa fa-camera"></i>
                 </div>
-                <div class="service-content">
+                <div class="service-content" style="height: 240px;">
                   <h3><a href="#">Сделайте фото</a></h3>
                   <p>Сфотографируйте Вашу вещь на вешалке или полке. Фото должно быть с хорошим освещением и ракурсом (одежда должна быть видна полностью). Рекомендуется фотографировать одежду на вешалках.</p>
                 </div>
-                <br>
-                <br>
-                <br>
+                <div class="read">
+                  <a href="#example-slider" class="btn btn-default scroll_down flowing-scroll" style="font-size: 13px;">Примеры</a>
+                </div>
+
 
               </div>
             </div>
@@ -261,13 +264,13 @@
                 <div class="service-icon">
                   <i class="fa fa-upload"></i>
                 </div>
-                <div class="service-content">
+                <div class="service-content" style="height: 240px;">
                   <h3><a href="#">Загрузите фото в форму</a></h3>
                   <p>Прикрепите сделанное фото в форму на нашем сайте. Одновременно можно загрузить только одну вещь.</p>
-                  <br>
-                  <br>
-                  <br>
-                <br>
+<!--                  <br>-->
+<!--                  <br>-->
+<!--                  <br>-->
+<!--                <br>-->
                 </div>
                 <div class="read">
                   <a href="#form-upload" class="btn btn-default scroll_down flowing-scroll" style="font-size: 13px;">Загрузить</a>
@@ -280,11 +283,11 @@
                 <div class="service-icon">
                   <i class="fa fa-magic"></i>
                 </div>
-                <div class="service-content">
+                <div class="service-content" style="height: 240px;">
                   <h3><a href="#">Обработка нейросетью</a></h3>
                   <p>После загрузки фото обрабатывается алгоримом нейросети. В результате его работы определяется категория вещи, а также убирается фон с фотографии. Теперь Вы можете найти Вашу вещь в разделе Мои вещи.</p>
                 </div>
-                <br>
+<!--                <br>-->
                 <div class="read">
                   <a href="my-wardrobe.html" class="btn btn-default" style="font-size: 13px;">Перейти</a>
                 </div>
@@ -304,13 +307,13 @@
           <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
         </div>
 
-        <div class="row d-flex justify-content-center mt-100">
+        <div class="row d-flex justify-content-center mt-100" style="padding-bottom: 25px; ">
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
                 <h5>Загрузите фото вещи</h5>
               </div>
-              <div class="card-block">
+              <div class="card-block" style="padding-bottom: 30px; margin-bottom: 30px;">
                 <form action="#" class="dropzone dz-clickable">
 <!--                  <div class="dz-default dz-message"><span>Перетащите файлы для загрузки</span></div>-->
                   <div class="row justify-content-center">
@@ -319,7 +322,7 @@
                     </div>
                   </div>
                 </form>
-                <div class="text-center m-t-20">
+                <div class="text-center m-t-20" style="margin-top: 10px;">
                   <button class="btn btn-primary">Загрузить</button>
                 </div>
               </div>
@@ -337,6 +340,78 @@
       </section>
       <!-- Page Footer-->
 </section>
+
+      <section class="example-slider" id="example-slider" style="margin-bottom: 20px;">
+        <div class="breadcrumbs-custom context-dark bg-overlay-24">
+          <div class="container" style="padding-top: 10px;">
+            <h3>Пример фото для загрузки</h3><br>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+              <div id="carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images/example-slider/ex1.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex2.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex3.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">s
+                    <img src="images/example-slider/ex4.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex5.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex6.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex7.png" style="width: 780px; height: 620px;">
+                  </div>
+                  <div class="item">
+                    <img src="images/example-slider/ex8.png" style="width: 780px; height: 620px;">
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div id="thumbcarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="images/example-slider/ex1.png"></div>
+                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="images/example-slider/ex2.png"></div>
+                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="images/example-slider/ex3.png"></div>
+                      <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="images/example-slider/ex4.png"></div>
+                    </div>
+                    <div class="item">
+                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="images/example-slider/ex5.png"></div>
+                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="images/example-slider/ex6.png"></div>
+                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="images/example-slider/ex7.png"></div>
+                      <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="images/example-slider/ex8.png"></div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                    <span class="glyphicon fa-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                    <span class="glyphicon fa-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+
+      </section>
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
           <div class="container">
