@@ -1,0 +1,85 @@
+
+
+.card {
+    border: none;
+    height: 300px;
+    background-color: transparent
+}
+
+.bg-white {
+    background-color: #9e9e9e
+}
+
+.price {
+    font-size: 35px;
+    color: #6d3152;
+    font-weight: 600
+}
+
+.pricing-1 {
+    background-color: #6d3152;
+    height: 145px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 15px;
+    color: #fff;
+    position: relative
+}
+
+.pricing-2 {
+    background-color: #6f5fe8;
+    height: 145px;
+    width: 100%;
+    border-radius: 4px
+}
+
+.circle span:nth-child(1) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 4px;
+    opacity: 0.3
+}
+
+.circle span:nth-child(2) {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    opacity: 0.3
+}
+
+.circle span:nth-child(3) {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    opacity: 0.3
+}
+
+.circle span:nth-child(4) {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    opacity: 0.3
+}
+.btn-danger {
+    color: #fff;
+    background-color: #6d3152;
+    border-radius: 10px;
+}
+
+

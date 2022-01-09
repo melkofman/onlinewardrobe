@@ -2220,3 +2220,26 @@ $(document).ready(function(){
 		$(this).text(i+1).prepend("0");
 	});
 });
+
+
+$('.flowing-scroll').on('click', function() {
+	var el = $(this);
+	var dest = el.attr('href'); // получаем направление
+	if (dest !== undefined && dest !== '') { // проверяем существование
+		$('html').animate({
+				scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+			}, 500 // скорость прокрутки
+		);
+	}
+	return false;
+});
+
+
+$(document).ready(function(){
+	$(".files").attr('data-before',"Перетащите файл или нажмите на кнопку");
+	$('input[type="file"]').change(function(e){
+		var fileName = e.target.files[0].name;
+		$(".files").attr('data-before',fileName);
+
+	});
+});
