@@ -101,11 +101,11 @@
                 <div class="rd-navbar-nav-wrap">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Главная</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Главная</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">О нас</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="classic-blog.html">Лента</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="classic-blog.html">Лента</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-menu rd-navbar-dropdown">
                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="classic-blog.html?query=top">ТОП</a></li>
@@ -136,11 +136,12 @@
                           <div>
                             <h5 class="rd-megamenu-title">Другие пользователи</h5>
                             <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html">Найти</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html?query=popular">Популярные образы</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html">Подборки образов</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Найти</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html?query=popular">Популярные образы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Подборки образов</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="articles.html?query=ideal-look">Как создать идеальный образ</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="feedback.html">Отзывы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="costs.html">Тарифные планы</a></li>
                             </ul>
                           </div>
                         </li>
@@ -212,7 +213,240 @@
         </div>
       </header>
       
-      <section style="height:570px"></section>
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark bg-overlay-48">
+          <div class="container">
+            <h2 class="breadcrumbs-custom-title">Лента</h2>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Главная</a></li>
+              <li class="active">Лента</li>
+            </ul>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-1-1920x678.jpg);"></div>
+        </div>
+      </section>
+      <!-- Grid Gallery-->
+      <section class="section section-xl bg-default"> 
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <!-- RD Search-->
+              <form class="rd-form rd-search rd-form-inline" action="search-results.html" method="GET">
+                <div style="display: contents;">
+                  <div class="form-wrap">
+                    <label class="form-label" for="rd-search-form-input">Искать здесь...</label>
+                    <input class="form-input" id="rd-search-form-input" type="text" name="s" autocomplete="off">
+                  </div>
+                  <div style="margin-left: 0px;" class="form-wrap form-button">
+                    <button style="height: 60px" class="button button-primary" type="submit">Поиск</button>
+                  </div>
+                </div>
+                <div class="filter-buttons">
+                  <span style="margin-top: 4px" class="custom-dropdown">
+                      <select>
+                          <option>Любой пол</option>
+                          <option>Мужской</option>
+                          <option>Женский</option>
+                      </select>
+                  </span>
+                  <span style="margin-top: 4px" class="custom-dropdown">
+                      <select>
+                          <option>Любой рейтинг</option>
+                          <option>Выше 4</option>
+                          <option>Выше 3</option>
+                          <option>Выше 2</option>
+                      </select>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="isotope-filters isotope-filters-horizontal oh-desktop">
+            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-4" data-custom-toggle-hide-on-blur="true"><span class="icon fa fa-caret-down"></span>Фильтр</button>
+            <ul class="isotope-filters-list wow slideInUp" id="isotope-4">
+              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">Все</a></li>
+              <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">ТОП</a></li>
+              <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Последнее</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section-xl bg-default text-center">
+        <div class="container">
+          <div class="row row-50 isotope isotope-wrap" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 3">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Вечерний образ 1</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Катерина Лоран</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 2">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Вечерний образ 2</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Катерина Лоран</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 1">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" data-lightgallery="item"><img src="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Костюм для тренировки</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Игорь Орлов</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 3">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="images/clothes/look.jpeg" data-lightgallery="item"><img src="images/clothes/look.jpeg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Проглка летним вечером</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Разумова Елена</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 2">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://moddam.ru/wp-content/uploads/2019/03/333.jpg" data-lightgallery="item"><img src="https://moddam.ru/wp-content/uploads/2019/03/333.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Летний образ</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Береговая Ксения</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 1">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://star.su/wp-content/uploads/2017/07/letnie-obrazy-2018-dlya-devushek-60-600x680.jpg" data-lightgallery="item"><img src="https://star.su/wp-content/uploads/2017/07/letnie-obrazy-2018-dlya-devushek-60-600x680.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Зимний образ</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Богданова Екатерина</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="button-wrap">
+            <button class="button button-md button-default-outline button-wapasha">Больше</button>
+          </div>
+        </div>
+        <div class="container">
+          <h3 style="padding-bottom: 40px;" class="wow fadeInLeft">Недавно просмотренные</h3>
+          <div class="row row-50 isotope isotope-wrap" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 3">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Вечерний образ 1</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Катерина Лоран</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 2">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Вечерний образ 2</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Катерина Лоран</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 1">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" data-lightgallery="item"><img src="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="double-room.html">Костюм для тренировки</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle">Игорь Орлов</p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">

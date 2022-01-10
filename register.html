@@ -136,11 +136,12 @@
                           <div>
                             <h5 class="rd-megamenu-title">Другие пользователи</h5>
                             <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html">Найти</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html?query=popular">Популярные образы</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html">Подборки образов</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Найти</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html?query=popular">Популярные образы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Подборки образов</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="articles.html?query=ideal-look">Как создать идеальный образ</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="feedback.html">Отзывы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="costs.html">Тарифные планы</a></li>
                             </ul>
                           </div>
                         </li>
@@ -211,8 +212,76 @@
           </nav>
         </div>
       </header>
-      
-      <section style="height:570px"></section>
+
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark">
+          <div class="container">
+            <h2 class="breadcrumbs-custom-title">Авторизация</h2>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Главная</a></li>
+              <li class="active">Авторизация</li>
+            </ul>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-1-1920x678.jpg);"></div>
+        </div>
+      </section>
+
+      <section class="section section-xl bg-default text-md-left">
+        <div class="container">
+          <div class="row row-50 justify-content-md-center">
+            <div class="col-md-10 col-lg-6">
+              <div class="card-login-register active" id="card-l-r">
+                <div class="card-top-panel">
+                  <div class="card-top-panel-left">
+                    <h4 class="card-title card-title-login">Логин</h4>
+                    <h4 class="card-title card-title-register">Регистрация</h4>
+                  </div>
+                  <div class="card-top-panel-right"><span class="card-subtitle"><span class="card-subtitle-login">Зарегестрироваться</span><span class="card-subtitle-register">Войти</span></span>
+                    <button class="card-toggle active" data-custom-toggle="#card-l-r"><span class="card-toggle-circle"></span></button>
+                  </div>
+                </div>
+                <div class="card-form card-form-login">
+                  <div class="button-social"><a class="button button-icon button-icon-left button-google button-pipaluk" href="#"><span class="icon fa fa-google-plus"></span>Google+</a></div>
+                  <div class="text-decoration-lines text-center"><span class="text-decoration-lines-content">or</span></div>
+                  <form class="rd-form rd-mailform">
+                    <div class="form-wrap">
+                      <label class="form-label" for="form-login-name-1">Логин</label>
+                      <input class="form-input" id="form-login-name-1" type="text" name="form-input" data-constraints="@Required">
+                    </div>
+                    <div class="form-wrap">
+                      <label class="form-label" for="form-login-password-1">Пароль</label>
+                      <input class="form-input" id="form-login-password-1" type="password" name="password" data-constraints="@Required">
+                    </div>
+                    <label class="checkbox-inline">
+                      <input name="input-checkbox-1" value="checkbox-1" type="checkbox">Запомнить меня
+                    </label>
+                    <button class="button button-block button-primary button-pipaluk" type="button" onclick="login();">Войти</button>
+                  </form>
+                </div>
+                <div class="card-form card-form-register">
+                  <div class="button-social"><a class="button button-icon button-icon-left button-google button-pipaluk" href="#"><span class="icon fa fa-google-plus"></span>Google+</a></div>
+                  <div class="text-decoration-lines text-center"><span class="text-decoration-lines-content">or</span></div>
+                  <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                    <div class="form-wrap">
+                      <label class="form-label" for="form-register-email">E-mail</label>
+                      <input class="form-input" id="form-register-email" type="email" name="email" data-constraints="@Email @Required">
+                    </div>
+                    <div class="form-wrap">
+                      <label class="form-label" for="form-login-password-2">Пароль</label>
+                      <input class="form-input" id="form-login-password-2" type="password" name="password" data-constraints="@Required">
+                    </div>
+                    <div class="form-wrap">
+                      <label class="form-label" for="form-login-password-3">Повторите пароль</label>
+                      <input class="form-input" id="form-login-password-3" type="password" name="password" data-constraints="@Required">
+                    </div>
+                    <button class="button button-block button-primary button-pipaluk" type="button" onclick="register();">Зарегестрироваться</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">

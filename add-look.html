@@ -2,20 +2,37 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Hostel</title>
+    <title>OnlineWardrobe</title>
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    <script src="js/script.js"></script>
+    <script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+    <script src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <link rel="stylesheet" href="css/costs-more.css">
+    <link rel="stylesheet" href="css/add-cloth-css.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.csss">
+
     <!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;">
+      <a href="https://windows.microsoft.com/en-US/internet-explorer/"><img
+              src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+              alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+    </div>
     <![endif]-->
   </head>
   <body>
@@ -122,9 +139,9 @@
                           <div>
                             <h5 class="rd-megamenu-title">Твой гардероб</h5>
                             <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="add-cloth.html">Добавить вещь</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="add-look.html">Добавить образ</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="my-wardrobe.html?query=looks">Посмотреть мои образы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Найти</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html?query=popular">Популярные образы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="classic-blog.html">Подборки образов</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="my-wardrobe.html?query=clothes">Посмотреть мои вещи</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="my-wardrobe.html">Мой гардероб</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="login.html">Войти</a></li>
@@ -141,6 +158,7 @@
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="looks.html">Подборки образов</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="articles.html?query=ideal-look">Как создать идеальный образ</a></li>
                               <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="feedback.html">Отзывы</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="costs.html">Тарифные планы</a></li>
                             </ul>
                           </div>
                         </li>
@@ -211,8 +229,194 @@
           </nav>
         </div>
       </header>
-      
-      <section style="height:570px"></section>
+
+      <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark bg-overlay-24" style="padding-top: 0;">
+          <div class="container">
+            <h2 class="breadcrumbs-custom-title">Добавить образ</h2>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html"></a>Главная</li>
+              <li class="active">Твой гардероб</li>
+              <li class="active">Добавить образ</li>
+            </ul>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 20px;">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-6">
+              <div class="serviceBox">
+                <div class="service-icon">
+                  <i class="fa fa-camera"></i>
+                </div>
+                <div class="service-content" style="height: 240px;">
+                  <h3><a href="#">Сделайте фото</a></h3>
+                  <p style="text-align: justify">Сфотографируйте Ваш образ на себе или модели. Фото должно быть с хорошим освещением и
+                    ракурсом (одежда должна быть видна полностью). Фото должно соответствовать нормам приличия.</p>
+                </div>
+                <div class="read">
+                  <a href="#example-slider" class="btn btn-default scroll_down flowing-scroll"
+                     style="font-size: 13px;">Примеры</a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="serviceBox">
+                <div class="service-icon">
+                  <i class="fa fa-upload"></i>
+                </div>
+                <div class="service-content" style="height: 240px;">
+                  <h3><a href="#">Загрузите фото в форму</a></h3>
+                  <p style="text-align: justify">Прикрепите сделанное фото в форму на нашем сайте. Одновременно можно загрузить только
+                    один образ.</p>
+                  <!--                  <br>-->
+                  <!--                  <br>-->
+                  <!--                  <br>-->
+                  <!--                <br>-->
+                </div>
+                <div class="read">
+                  <a href="#form-upload" class="btn btn-default scroll_down flowing-scroll"
+                     style="font-size: 13px;">Загрузить</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="serviceBox">
+                <div class="service-icon">
+                  <i class="fa fa-magic"></i>
+                </div>
+                <div class="service-content" style="height: 240px;">
+                  <h3><a href="#">Добавить описание</a></h3>
+                  <p style="text-align: justify">После загрузки фото вы можете добавить к нему название и описание.
+                    После публикации образа в общую ленту остальные пользователи
+                    смогут оценить ваш образ от 1 до 5. Посмотреть свои образы можно посмотреть во вкладке Мои образы.</p>
+                </div>
+                <!--                <br>-->
+                <div class="read">
+                  <a href="my-wardrobe.html" class="btn btn-default" style="font-size: 13px;">Перейти</a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- ./row -->
+        </div>
+      </section>
+
+
+      <section class="form-upload" id="form-upload">
+        <div class="breadcrumbs-custom context-dark bg-overlay-24">
+          <div style="padding-top: 40px !important;" class="container">
+            <h3>Форма для загрузки</h3><br>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-100" style="padding-bottom: 25px; ">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h5>Загрузите фото образа</h5>
+              </div>
+              <div class="card-block" style="padding-bottom: 30px; margin-bottom: 30px;">
+                <form action="#" class="dropzone dz-clickable">
+                  <!--                  <div class="dz-default dz-message"><span>Перетащите файлы для загрузки</span></div>-->
+                  <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-10 col-12">
+                      <div class="form-group files"><input id="file" type="file" class="form-control"/>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary">Загрузить</button>
+                </form>
+                <!--                <div class="text-center m-t-20" style="margin-top: 10px;">-->
+
+                <!--                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--        <div class="row justify-content-center">-->
+        <!--          <div class="col-md-12 col-lg-10 col-12">-->
+        <!--            <div class="form-group files"><label class="my-auto">Upload Your File </label> <input id="file" type="file" class="form-control" /></div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+      </section>
+      <!-- Page Footer-->
+      </section>
+
+      <section class="example-slider" id="example-slider" style="margin-bottom: 20px;">
+        <div class="breadcrumbs-custom context-dark bg-overlay-24">
+          <div style="padding-top: 40px !important;" class="container">
+            <h3>Пример фото для загрузки</h3><br>
+          </div>
+          <div class="box-position" style="background-image: url(images/slider-4-slide-3-1920x678.png);"></div>
+        </div>
+
+        <div class="container-fluid">
+          <!-- Owl Carousel-->
+          <div style="padding-top: 30px" class="owl-carousel owl-classic owl-dots-secondary" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-xl-items="5" data-xxl-items="6" data-stage-padding="15" data-xxl-stage-padding="0" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look.jpeg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look.jpeg" data-lightgallery="item"><img src="images/gallery-home-1-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look1.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look1.jpg" data-lightgallery="item"><img src="images/gallery-home-2-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look2.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look2.jpg" data-lightgallery="item"><img src="images/gallery-home-3-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look3.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look3.jpg" data-lightgallery="item"><img src="https://moddam.ru/wp-content/uploads/2020/10/b9ae3c49-9d98-47f3-9e80-6e830b2b7d41-e1603216777357.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look4.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look4.jpg" data-lightgallery="item"><img src="images/gallery-home-5-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look5.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look5.jpg" data-lightgallery="item"><img src="images/project-25-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="images/clothes/look6.jpg" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="images/clothes/look6.jpg" data-lightgallery="item"><img src="images/gallery-home-6-270x195.jpg" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">
