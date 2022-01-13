@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <link rel="stylesheet" href="css/star.css">
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -89,13 +89,13 @@
                   <ul class="rd-navbar-corporate-contacts">
                     <li>
                       <div class="unit unit-spacing-xs">
-                        <div class="unit-left"><a><span class="icon fa fa-vk"></span></a></div>
+                        <div class="unit-left"><span class="icon fa fa-vk"></span></div>
                       </div>
                     </li>
                     <li class="user_setting">
                       <div class="dropdown">
                         <a class="btn dropdown-toggle" href="#" data-toggle="dropdown"><img width="50px"
-                                class="rounded-circle" src="images/user5.jpg" alt="e1.png"> <span
+                                                                                            class="rounded-circle" src="images/user5.jpg" alt="e1.png"> <span
                                 class="dn-1199">Рудакова Оля</span></a>
 
                         <div class="dropdown-menu">
@@ -234,78 +234,176 @@
       </header>
 
       <section class="breadcrumbs-custom-inset">
-        <div class="breadcrumbs-custom context-dark">
+        <div class="breadcrumbs-custom context-dark bg-overlay-46">
           <div class="container">
-            <h2 class="breadcrumbs-custom-title">Редактировать профиль</h2>
+            <h2 class="breadcrumbs-custom-title">Образ</h2>
             <ul class="breadcrumbs-custom-path">
               <li><a href="index.html">Главная</a></li>
-              <li><a href="profile.html">Профиль</a></li>
-              <li class="active">Редактировать</li>
+              <li><a href="classic-blog.html">Лента</a></li>
+              <li class="active">Образ</li>
             </ul>
           </div>
           <div class="box-position" style="background-image: url(images/slider-4-slide-1-1920x678.jpg);"></div>
         </div>
       </section>
-
-      <section class="section section-xl bg-default text-md-left">
+      <!-- Single Project-->
+      <section class="section section-md section-first bg-default">
         <div class="container">
-          <div class="row row-50 justify-content-center align-items-center align-items-lg-start text-left">
-            <div class="col-md-6 col-lg-5 col-xl-4 text-center">
-              <h4>Редактировать фото</h4>
-              <div class="avatar-upload">
-                <div class="avatar-edit">
-                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                  <label for="imageUpload"></label>
+          <div class="row row-50 justify-content-center align-items-xl-center">
+            <div class="col-md-10 col-lg-6 col-xl-7">
+              <div class="offset-right-xl-15">
+                <!-- Owl Carousel-->
+                <img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" alt="" width="450" />
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 col-xl-5">
+              <div class="single-project">
+                <h4>Вечерний образ 1</h4>
+                <p class="text-gray-500">Этот образ был создан мной для появления на кком-нибудь светком мероприятии, таком как поход в театр или в ресторан. Синий цвет моден в этом году и сочетается с серебрянными украшениями. Выглядит элегантно и в то же время сексуально. Подойдет для свидания с машим молодым человеком! :)</p>
+                <div class="divider divider-30"></div>
+                <ul class="list list-description d-inline-block d-md-block">
+                  <li><span>Тип: </span><span>Вечерний</span></li>
+                  <li><span>Сезон: </span><span>Лето</span></li>
+                  <li><span>Стоимость: </span><span>Средняя</span></li>
+                  <li></li>
+                </ul>
+                <span>Рейтинг: </span><div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+                <button id="openBtn" class="button button-md button-default-outline-2 button-ujarak">Оценить</button>
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span style="align-self: self-end;" class="close">&times;</span>
+                    <div class="star-source">
+                      <svg>
+                        <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                          <stop stop-color="pink" offset="0%"></stop>
+                          <stop stop-color="pink" offset="60%"></stop>
+                          <stop stop-color="pink" offset="100%"></stop>
+                        </linearGradient>
+                        <symbol id="star" viewBox="153 89 106 108">
+                          <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                        </symbol>
+                      </svg>
+
+                    </div>
+                    <span style="align-self: center;">Ваша оценка: </span>
+                    <div class="star-container">
+                      <input type="radio" name="star" id="five">
+                      <label for="five">
+                        <svg class="star">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </label>
+                      <input type="radio" name="star" id="four">
+                      <label for="four">
+                        <svg class="star">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </label>
+                      <input type="radio" name="star" id="three">
+                      <label for="three">
+                        <svg class="star">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </label>
+                      <input type="radio" name="star" id="two">
+                      <label for="two">
+                        <svg class="star">
+                          <use xlink:href="#star" />
+                        </svg>
+                      </label>
+                      <input type="radio" name="star" id="one">
+                      <label for="one">
+                        <svg class="star">
+                          <use xlink:href="#star" />
+                        </svg>
+                      </label>
+
+                    </div>
+                  </div>
+
                 </div>
-                <div class="avatar-preview">
-                  <div id="imagePreview" style="background-image: url(images/user5.jpg);">
+                <div class="divider divider-30"></div>
+                <div class="group-md group-middle justify-content-sm-start"><span class="social-title">Поделиться</span>
+                  <div>
+                    <ul class="list-inline list-inline-sm social-list">
+                      <li><a class="icon fa fa-facebook" href="#"></a></li>
+                      <li><a class="icon fa fa-twitter" href="#"></a></li>
+                      <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                      <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
-              <h4 class="text-spacing-50">Персональные данные</h4>
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                <div class="row row-14 gutters-14">
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-first-name">Имя</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-last-name">Фамилия</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                      <label class="form-label" for="contact-email">E-mail</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-vk" type="email" name="email">
-                      <label class="form-label" for="contact-email">Vk</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-instagram" type="email" name="email">
-                      <label class="form-label" for="contact-email">Instagram</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-message">Описание</label>
-                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-xl bg-default text-center">
+        <div class="container">
+          <h3 style="padding-bottom: 40px;" class="wow fadeInLeft">Недавно просмотренные</h3>
+          <div class="row row-50 isotope isotope-wrap" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 3">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-2-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="look.html">Вечерний образ 1</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle"><a href="profile.html">Катерина Лоран</a></p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
                     </div>
                   </div>
                 </div>
-                <button class="button button-primary button-pipaluk" type="submit">Сохранить</button>
-              </form>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 2">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" data-lightgallery="item"><img src="https://go.star.su/wp-content/uploads/2017/07/platya-na-vypusknoj-2018-11-klass-1-1-768x871.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="look.html">Вечерний образ 2</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle"><a href="profile.html">Катерина Лоран</a></p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 isotope-item" data-filter="Type 1">
+              <!-- Thumbnail Modern-->
+              <article class="thumbnail thumbnail-modern thumbnail-sm"><a class="thumbnail-modern-figure" href="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" data-lightgallery="item"><img src="https://star.su/wp-content/uploads/2018/04/muzhskaya-moda-2018-vesna-leto-osnovnye-tendentsii-44-600x680.jpg" alt="" width="370" height="303"/></a>
+                <div class="thumbnail-modern-caption">
+                  <h5 class="thumbnail-modern-title"><a href="look.html">Костюм для тренировки</a></h5>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p class="thumbnail-modern-subtitle"><a href="profile.html">Игорь Орлов</a></p>
+                    <div>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -412,6 +510,7 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"> </script>
+    <script src="js/modal.js"></script>
 	
 	<!--LIVEDEMO_00 -->
 
@@ -424,23 +523,6 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();</script>
-
-    <script>
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          reader.onload = function(e) {
-            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-            $('#imagePreview').hide();
-            $('#imagePreview').fadeIn(650);
-          }
-          reader.readAsDataURL(input.files[0]);
-        }
-      }
-      $("#imageUpload").change(function() {
-        readURL(this);
-      });
-    </script>
 	
   <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
 </html>
